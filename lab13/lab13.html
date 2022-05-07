@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./lab13.js"></script>
+    <style type="text/css">
+      #form1 {
+        border: 1px solid black;
+        width: 280px;
+        padding: 10px;
+      }
+
+      #btn1 {
+        padding: 5px;
+        margin: 5px;
+        padding: 0 10px;
+      }
+
+      /* form - 2 */
+      table {
+        width: 600px;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        padding: 4px;
+        width: 200px;
+        text-align: center;
+      }
+
+      th {
+        text-align: center;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>1 - р Форм</h3>
+    <div id="form1">
+      <form>
+        1 st Number: <input type="number" id="number1" /> <br /><br />
+        2nd Number: <input type="number" id="number2" />
+        <div id="btn1">
+          <input
+            type="button"
+            id="number1"
+            value="Multiplay"
+            onclick="Multiplay()"
+          />
+          <input type="button" id="number2" value="Divide" onclick="Divide()" />
+        </div>
+      </form>
+      <h3>The result is:</h3>
+      <p id="result"></p>
+    </div>
+    <h3>2 - р Форм</h3>
+    <table id="table1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Town</th>
+        </tr>
+      </thead>
+      <tbody id="tbd1">
+        <tr>
+          <td>Eve</td>
+          <td>Sofia</td>
+        </tr>
+        <tr>
+          <td>Nick</td>
+          <td>Varna</td>
+        </tr>
+        <tr>
+          <td>Didi</td>
+          <td>Ruse</td>
+        </tr>
+        <tr>
+          <td>Tedy</td>
+          <td>Varna</td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="button" id="Tcolor" value="Colorize" onclick="Colorize()" />
+    <!-- 3-r Form -->
+    <h3>Insert Item:</h3>
+    <form>
+      Name: <input type="text" id="name" />
+      <br />
+      Price: <input type="number" id="price" /> <br /><br />
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th id="sum">0</th>
+        </tr>
+      </tfoot>
+    </table>
+    <input type="button" id="insert" value="insert" onclick="Insert()" />
+  </body>
+</html>
