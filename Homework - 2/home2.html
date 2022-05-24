@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./home2.js"></script>
+    <title>Бие даалт - 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            ТООЦООЛОЛ: НДШ-ийн 50%-ийн буцаан олголтоор та хэдэн төгрөг авах
+            боломжтой вэ?
+        </h1>
+        <div class="row g-3 text-center">
+            <div class="col-auto">
+                <label for="salary" class="col-form-label text-white pe-2 ps-2 bg-success">ҮНДСЭН
+                    ЦАЛИН: </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" id="salary" class="form-control" />
+            </div>
+            <div class="col-auto">
+                <input type="button" value="ЦАЛИН БОДОХ" class="btn btn-primary" id="bs" onclick="Salarybasic()">
+            </div>
+        </div>
+        <table class="table table-bordered mt-4">
+            <thead class="text-center table-light text-dark">
+                <tr>
+                    <th>Агуулга</th>
+                    <th>ОДОО
+                        2022(5-12 сар)
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td class="text-start">
+                        ХХДХ- Хөдөлмөрийн хөлсний доод хэмжээ
+                    </td>
+                    <td class="text-end text-secondary">420,000</td>
+                </tr>
+                <tr>
+                    <td class="text-start">НДШ (%)- Хувь хүн</td>
+                    <td class="text-end text-secondary">(11.5%)</td>
+                </tr>
+                <tr>
+                    <td class="text-start">НДШ (%)- АО</td>
+                    <td class="text-end text-secondary">(12.5%)</td>
+                </tr>
+                <tr>
+                    <td class="text-start bg-primary text-white">ЦАЛИН БҮГД</td>
+                    <td class="text-end bg-primary text-white" id="all_salary">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start">НДШ-АО -Ажил олгогчоос төлөх</td>
+                    <td class="text-end text-danger" id="ndsh_price">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start text-white w-75 h-75 bg-success">ҮНДСЭН
+                        ЦАЛИН-Сарын
+                        үндсэн цалин</td>
+                    <td class="text-end text-white bg-success" id="basic">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start">НДШ-Хувь хүн төлөх(2% + 9.5%)</td>
+                    <td class="text-end text-danger" id="ndsh2_price">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start">ХХОАТ 10%</td>
+                    <td class="text-end text-danger" id="hhoat_10">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start">Хөнгөлөлт - ХХОАТ-ийн хөнгөлөлт</td>
+                    <td class="text-end text-success" id="discount">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start bg-warning text-white">ГАРТ ОЛГОХ</td>
+                    <td class="text-end bg-warning text-white" id="hand">0</td>
+                </tr>
+                <tr>
+                    <td class="text-start">НДШ-ийн Буцаалт(4.75%)</td>
+                    <td class="text-end text-success" id="return">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="bg-secondary p-2 text-center rounded opacity-60">Анхааруулга: Энэхүү тооцоолол нь таны цалингийн
+            эцсийн
+            үнэлгээ биш бйаж болохыг анхаарна уу.
+        </div>
+    </div>
+</body>
+
+</html>
